@@ -7,7 +7,7 @@ function HeroSection() {
     <section className="relative h-screen flex items-center justify-center text-gray-800 overflow-hidden bg-gradient-to-br from-[#f1efe7] to-[#121212]">
        {/* Logo */}
        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20">
-        <img src="/PRS.svg" alt="PureRank Strategies Logo" className="h-12" />
+        <img src="/PRS.png" alt="PureRank Strategies Logo" className="h-12" />
       </div>
       {/* Content Overlay */}
       <div className="relative z-10 text-center">

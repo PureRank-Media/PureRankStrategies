@@ -37,7 +37,7 @@ function TermsOfService() {
         <p className="mb-4">We may update these Terms of Service at any time. Your continued use of our services constitutes acceptance of the changes.</p>
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">8. Contact Us</h2>
-        <p>If you have any questions, contact us at [Insert Contact Information].</p>
+        <p>If you have any questions, contact us at info@purerankstrategies.</p>
       </div>
       </main>
     </div>
