@@ -1,8 +1,11 @@
 // src/components/HeroSection.jsx
 import React from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import useAnalyticsEventTracker from './useAnalyticsTracker';
+
 
 function HeroSection() {
+  const gaEventTracker = useAnalyticsEventTracker('Marketing Audit');
   return (
     <section className="relative h-screen flex items-center justify-center text-gray-800 overflow-hidden bg-gradient-to-br from-[#f1efe7] to-[#121212]">
        {/* Logo */}
@@ -13,7 +16,7 @@ function HeroSection() {
       <div className="relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Unlock Automated Growth</h1>
         <p className="text-lg mb-8">We help businesses scale their marketing efforts...</p>
-        <a href="https://purerank.ac-page.com/schedule-audit" target="_blank" rel="noopener noreferrer">
+        <a href="https://purerank.ac-page.com/schedule-audit" onClick={()=>gaEventTracker('form')} target="_blank" rel="noopener noreferrer">
           <button className="bg-white text-purple-700 font-bold py-3 px-6 rounded-full hover:bg-purple-200">
             Schedule a Free Audit
           </button>

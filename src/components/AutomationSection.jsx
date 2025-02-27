@@ -1,7 +1,9 @@
 // src/components/AutomationSection.jsx
 import React from 'react';
+import useAnalyticsEventTracker from "./UseAnalyticsTracker";
 
 function AutomationSection() {
+    const gaEventTracker = useAnalyticsEventTracker('Marketing Audit');
   return (
     <section className="bg-dark-primary py-16">
       <div className="container mx-auto px-4">
@@ -22,7 +24,7 @@ function AutomationSection() {
           </div>
         </div>
         <div className="text-center mt-8">
-        <a href="https://purerank.ac-page.com/schedule-audit" target="_blank" rel="noopener noreferrer">
+        <a href="https://purerank.ac-page.com/schedule-audit" onClick={()=>gaEventTracker('form')} target="_blank" rel="noopener noreferrer">
             <button className="bg-dark-accent-purple text-dark-text-primary font-bold py-3 px-6 rounded-full hover:bg-purple-700">
               Schedule a Free Consultation to Discuss Your Automation Potential
             </button>
